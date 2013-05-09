@@ -24,7 +24,7 @@
 
 			<div class="row">
 				<label for="ContactForm_email">Email</label>
-				<input type="text" id="email" name="email" class="required">
+				<input type="text" id="email" name="email" class="required email">
 			</div>
 
 			<div class="row">
