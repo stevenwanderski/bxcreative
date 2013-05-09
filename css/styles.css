@@ -1,0 +1,770 @@
+/* @override 
+	http://new.bxcreative.com/sites/all/themes/bxcreative/css/bxcreative.css?lvhvgr
+*/
+
+/*
+@colors:
+	tan:        #f7f4f0;
+	dark gray:  #302f2e;
+	light gray: #818181;
+	red:        #de3329;
+*/
+
+.clearfix:before,
+.clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after {
+    clear:both;
+}
+
+/** TYPOGRAPHY
+================================================= **/
+
+@font-face {
+	font-family: KievitWeb;
+	src: url(../fonts/KievitWeb.eot);
+	font-weight:  normal;
+}
+
+@font-face {
+	font-family: KievitWeb;
+	src: url(../fonts/KievitWeb-Bold.eot);
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: KievitWeb;
+	src: url(../fonts/KievitWeb.woff) format("woff");
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: KievitWeb;
+	src: url(../fonts/KievitWeb-Bold.woff) format("woff");
+	font-weight: bold;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+}
+
+h1, h2, h3, h4 {
+	color: #302f2e;
+}
+
+h1 {
+	color: #302f2e;
+	font-size: 56px;
+	line-height: 68px;
+	margin-bottom: 10px;
+	-moz-transition: all 0.15s ease-in-out 0s;
+	-webkit-transition: all 0.15s ease-in-out 0s;
+}
+
+h1 a {
+	color: #302f2e;
+	-moz-transition: color 0.15s ease-in-out 0s;
+	-webkit-transition: color 0.15s ease-in-out 0s;
+}
+
+h1 a:hover {
+	color: #de3329;
+}
+
+.front h1 {
+	text-align: center;
+}
+
+.front .body {
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+em {
+	color: #de3329;
+	font-style: normal;
+}
+
+::selection {
+	background: #de3329;
+	color: #f7f4f0;
+}
+::-moz-selection {
+	background: #de3329;
+	color: #f7f4f0;
+}
+
+.btn {
+	color: #fff;
+	background: #de3329;
+	padding: 10px 30px;
+	font-size: 24px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	display: inline-block;
+	box-shadow: 0 10px 0 #8f211a;
+	position: relative;
+}
+
+.btn:hover {
+
+}
+
+.btn:active {
+	top: 10px;
+	box-shadow: none;
+}
+
+/** STRUCTURE 
+================================================= **/
+
+body {
+	font-family: KievitWeb;
+	background: url(../images/bg_texture_black.jpg);
+}
+
+header, footer, section {
+	display: block;
+}
+
+#main {
+	background: url(../images/bg_texture_tan.jpg);
+	padding-top: 55px;
+}
+
+#main .inner {
+	max-width: 960px;
+	margin: 0 auto;
+	padding-bottom: 60px;
+	position: relative;
+	width: 90%;
+}
+
+#main .body {
+	font-size: 20px;
+	color: #707070;
+	margin-bottom: 20px;
+	-moz-transition: all 0.15s ease-in-out 0s;
+	-webkit-transition: all 0.15s ease-in-out 0s;
+}
+
+p.cta {
+	padding: 20px 0 50px;
+}
+
+/** HEADER 
+================================================= **/
+
+header .inner {
+	max-width: 960px;
+	margin: 0 auto;
+	font-weight: bold;
+	width: 90%;
+}
+
+header a {
+	color: #f7f4f0;;
+}
+
+header .logo {
+	font-size: 42px;
+	letter-spacing: 1px;
+	background: url(../images/icon_star1.png) no-repeat 0 5px;
+	padding-left: 50px;
+	margin-top: 20px;
+	margin-left: -53px;
+	float: left;
+	margin-bottom: 15px;
+	-moz-transition: all 0.15s ease-in-out 0s;
+	-webkit-transition: all 0.15s ease-in-out 0s;
+}
+
+header nav {
+	float: right;
+}
+
+header nav li {
+	float: left;
+	list-style: none;
+}
+
+header nav li a {
+	display: block;
+	padding: 45px 15px 0;
+	font-size: 18px;
+	font-weight: bold;
+	background-position: -999999px -999999px;
+}
+
+/*works*/
+header li.home.active a,
+header li.home a:hover {
+	background: url(../images/icon_home.png) no-repeat 58px 19px;
+}
+
+/*philosophy*/
+header li.philosophy.active a,
+header li.philosophy a:hover {
+	background: url(../images/icon_book.png) no-repeat 48px 20px;
+}
+
+/*contact*/
+header li.contact a {
+	/*padding-right: 0;*/
+}
+
+header li.contact.active a,
+header li.contact a:hover {
+	background: url(../images/icon_mail.png) no-repeat 38px 22px;
+}
+
+/** HOMEPAGE 
+================================================= **/
+
+.front h2 {
+	text-align: center;
+	background: url(../images/icon_star2.png) no-repeat 50% 16px;
+	font-size: 42px;
+	margin-bottom: 25px;
+	display: none;
+}
+
+.project-wrap {
+ 	float: left;
+	width: 29.2%;
+	text-align: center;
+}
+
+.project-wrap.middle {
+	padding: 0 6%;
+}
+
+.project-wrap a {
+	display: block;
+	padding-bottom: 45px;
+}
+
+.project-wrap a:hover .project-title {
+	color: #de3329;
+}
+
+.project-wrap .project-title {
+	font-weight: bold;
+	color: #302f2e;
+	font-size: 24px;
+	margin-top: 10px;
+	-moz-transition: color 0.15s ease-in-out 0s;
+	-webkit-transition: color 0.15s ease-in-out 0s;
+}
+
+.project-wrap a .project-tagline {
+	color: #818181;
+}
+
+.project-wrap img {
+	max-width: 100%;
+	height: auto;
+	box-shadow: 0 0 7px #bbb;
+	-moz-box-shadow: 0 0 7px #bbb;
+	-webkit-box-shadow: 0 0 7px #bbb;
+}
+
+/** WORK 
+================================================= **/
+
+.projects {
+	padding-top: 20px;
+}
+
+.project-item {
+	margin-bottom: 80px;
+}
+
+.project-item .left {
+	float: left;
+	width: 51%;
+}
+
+.project-item .right {
+	float: right;
+	width: 42%;
+}
+
+.project-item img {
+	width: 100%;
+	height: auto;
+	box-shadow: 0 0 7px #bbb;
+	-moz-box-shadow: 0 0 7px #bbb;
+	-webkit-box-shadow: 0 0 7px #bbb;	
+}
+
+.project-item h2 {
+	font-size: 28px;
+	line-height: 34px;
+	margin-bottom: 10px;
+}
+
+.project-item .description {
+	color: #838383;
+	font-size: 16px;
+}
+
+.work-back {
+	position: absolute;
+	top: -60px;
+	left: 0;
+}
+
+.work-back a {
+	color: #de3329;
+/*	font-weight: bold;*/
+	font-size: 16px;
+}
+
+.work-back a:hover {
+	text-decoration: underline;
+}
+
+.project #main {
+	padding-top: 85px;
+}
+
+/** PHILOSOPHY 
+================================================= **/
+
+.philosophy-items {
+	margin-top: 55px;
+}
+
+.philosophy-item {
+	margin-bottom: 50px;
+}
+
+.philosophy-item .image {
+	float: left;
+	width: 15%;
+}
+
+.philosophy-item .title {
+	font-size: 28px;
+	line-height: 34px;
+	margin-bottom: 5px;
+	font-weight: bold;
+	color: #302f2e;
+	float: left;
+	width: 85%;
+}
+
+.philosophy-item p {
+	color: #838383;
+	font-size: 16px;
+	float: left;
+	width: 85%;
+}
+
+/** CONTACT 
+================================================= **/
+
+label {
+	font-size: 20px;
+	line-height: 34px;
+	margin-bottom: 5px;
+	font-weight: bold;
+	color: #302f2e;
+	display: block;
+}
+
+label span {
+	display: none;
+}
+
+input[type="text"],
+textarea {
+	background: #fff;
+	padding: 7px;
+	color: #302f2e;
+	border: solid #e4e0db 1px;
+}
+
+input[type="text"] {
+	width: 400px;
+	font-size: 14px;
+}
+
+textarea {
+	width: 600px;
+	font-family: inherit;
+}
+
+form .row {
+	margin-bottom: 15px;
+}
+
+input[type="submit"] {
+	background: #de3329;
+	border: 0;
+	color: #f7f4f0;
+	font: bold 20px KievitWeb;
+	padding: 7px 15px;
+	cursor: pointer;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	margin-top: 5px;
+	float: left;
+	margin-right: 20px;
+	-webkit-appearance: none;
+}
+
+input[type="submit"]:hover {
+	text-decoration: underline;
+}
+
+input[type="submit"].sending {
+	background: #f4766f;
+	cursor: auto;
+}
+
+input[type="submit"].sending:hover {
+	text-decoration: none;
+}
+
+#webform-client-form-3 .messages {
+	display: none;
+}
+
+.errorMessage {
+	padding-top: 5px;
+	color: #de3329;
+}
+
+.ajax-progress {
+	float: left;
+	margin-top: -5px;
+}
+
+.contact #main .inner {
+	min-height: 560px;
+}
+
+.contact-success h2 {
+	font-size: 40px;
+	padding-top: 33px;
+}
+
+.contact-success p {
+	color: #818181;
+	font-size: 18px;
+}
+
+/** FOOTER 
+================================================= **/
+
+footer .inner {
+	max-width: 960px;
+	margin: 0 auto;
+	color: #f7f4f0;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	width: 90%;
+}
+
+footer a {
+	color: #f7f4f0;
+}
+
+footer a:hover {
+	border-bottom: solid 1px #f7f4f0;
+}
+
+footer h4 {
+	color: #f7f4f0;
+}
+
+/*footer logo*/
+footer .company {
+	float: left;
+	margin-right: 60px;
+}
+
+footer .company h4 {
+	background: url(../images/icon_star3.png) no-repeat 0 3px;
+	font-size: 22px;
+	letter-spacing: 1px;
+	padding-left: 28px;
+	margin-left: -28px;
+}
+
+/*bxcommunity*/
+footer .community h4 {
+	font-size: 22px;
+	letter-spacing: 1px;
+}
+
+
+/** RESPONSIVE LAYOUTS
+=======================================**/
+
+@media only screen and (max-width: 1100px) {
+	header .logo {margin-left: 0;}
+}
+
+/** iPad landscape **/
+@media only screen and (max-width: 1024px) {
+	#main .body {font-size: 19px;}
+	/*footer*/
+	footer .company h4 {margin-left: 0;}
+	footer .company p {margin-left: 28px;}
+}
+
+/** iPad portrait **/
+@media only screen and (max-width: 768px) {
+	h1 {font-size: 48px;}
+	#main .body {font-size: 18px;}
+	/*philosophy*/
+	.view-philosophy .field-name-field-image {width: 20%;}
+	.view-philosophy .field-name-field-work-item-title {width: 80%;}
+	.view-philosophy .field-name-field-work-item-desc {width: 80%;}
+
+	.project-wrap {
+		float: none;
+		width: 100%;
+	}
+
+	.project-wrap.middle {
+		padding: 0;
+	}
+
+}
+
+
+@media only screen and (max-width: 610px) {
+	h1 {
+		font-size: 42px;
+		line-height: 42px;
+	}
+	
+	.front h1 {
+		text-align: center;
+	}
+	
+	.front #main .body {
+		text-align: center;
+	}
+	
+	header .logo {
+		margin: 19px auto 0;
+		width: 260px;
+		float: none;
+	}
+	
+	header nav {
+		float: none;
+		padding-bottom: 10px;
+		margin-left: 0;
+	}
+	
+	header nav ul {
+		text-align: center;
+		margin: 0;
+		padding: 0;
+	}
+	
+	header nav li {
+		float: none;
+		display: inline;
+	}
+	
+	header nav li a {
+		padding-top: 0;
+		background: none!important;
+		display: inline;
+	}
+	
+	header nav li a.active {
+		text-decoration: underline;
+	}
+	
+	footer .community {
+		width: 185px;
+		float: left;
+	}
+	
+	.project-wrap a .project-title {
+		font-size: 18px;
+	}
+	
+	.project-wrap a .project-tagline {
+		font-size: 15px;
+	}
+	
+	/*philosophy*/
+	.page-node-2 h1,
+	.page-node-2 #main-content .body {
+		text-align: left;
+	}
+
+	/*works*/
+	.project h1 {
+		font-size: 36px;
+		text-align: left;
+	}
+	
+	.project #main {
+		padding-top: 50px;
+	}
+	
+	.work-back {
+	top: -35px;
+}
+	
+	.project-item h2 {
+		font-size: 22px;
+		line-height: 26px;
+	}
+
+}
+
+/** iPhone landscape **/
+@media only screen and (max-width: 480px) {
+	
+	h1 {
+		line-height: 48px;
+	}
+	
+	.front h1 {
+		text-align: center;
+	}
+	
+	#main {
+		padding-top: 20px;
+	}
+
+	#main .body {
+		font-size: 16px;
+	}
+	
+	.front #main .body {
+		text-align: center;
+	}
+		
+	header nav li a {
+		padding-top: 0;
+		background: none!important;
+	}
+	
+	header nav li a.active {
+		text-decoration: underline;
+	}
+
+	footer .community {
+		display: none;
+	}
+	
+	.project-wrap {
+		float: none;
+		width: 100%;
+	}
+
+	.project-wrap.middle {
+		padding: 0;
+	}
+	
+	.project-wrap.odd a,
+	.project-wrap.even a {
+		padding: 0 0 20px 0;
+	}
+	
+	.project-wrap .project-title,
+	.project-wrap .project-tagline {display: none;}
+	
+	/*works*/
+	.project-item h2 {
+		font-size: 18px;
+		line-height: 20px;
+	}
+	
+	.project-item .left {
+		float: none;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	
+	.project-item .right {
+		float: none;
+		width: 100%;
+	}
+	
+	/*philosophy*/
+	.view-philosophy .field-name-field-image {width: 20%;}
+	.view-philosophy .field-name-field-image img {
+		width: 80%;
+		height: auto;
+	}
+	.view-philosophy .field-name-field-work-item-title {
+		width: 80%;
+		font-size: 20px;	
+	}
+	.view-philosophy .field-name-field-work-item-desc {
+		width: 80%;
+		font-size: 14px;
+	}
+
+	/*contact*/
+	.node-type-webform h1 {
+		font-size: 38px;
+	}
+	
+	.form-text {
+		width: 90%;
+	}
+
+	.form-textarea {
+		width: 90%;
+	}
+
+	
+}
+
+/** iPhone portrait **/
+@media only screen and (max-width: 320px) {
+	
+	header nav li a {
+		font-size: 14px;
+	}
+
+	.front h2 {
+		font-size: 32px;
+		background-position: 50% 10px;
+	}
+	
+	.view-philosophy .field-name-field-work-item-title {
+		font-size: 18px;	
+	}
+	
+	/*works*/
+	.project h1 {
+		font-size: 22px;
+	}
+
+	.btn {
+		font-size: 20px;
+	}
+	
+}
+
+
+
+
+
+
+
+
