@@ -110,6 +110,8 @@ em {
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
 	display: inline-block;
+	-moz-box-shadow: 0 10px 0 #8f211a;
+	-webkit-box-shadow: 0 10px 0 #8f211a;
 	box-shadow: 0 10px 0 #8f211a;
 	position: relative;
 }
