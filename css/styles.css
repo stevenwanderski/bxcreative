@@ -198,7 +198,7 @@ header nav li {
 
 header nav li a {
 	display: block;
-	padding: 45px 15px 0;
+	padding: 38px 15px 0;
 	font-size: 18px;
 	font-weight: bold;
 	background-position: -999999px -999999px;
@@ -223,7 +223,8 @@ header li.contact a {
 
 header li.contact.active a,
 header li.contact a:hover {
-	background: url(../images/icon_mail.png) no-repeat 38px 22px;
+	/*background: url(../images/icon_mail.png) no-repeat 38px 22px;*/
+	text-decoration: underline;
 }
 
 /** HOMEPAGE 
@@ -428,9 +429,13 @@ input[type="submit"]:hover {
 	text-decoration: underline;
 }
 
-input[type="submit"].sending {
+input[disabled] {
 	background: #f4766f;
 	cursor: auto;
+}
+
+input[disabled]:hover {
+	text-decoration: none;
 }
 
 input[type="submit"].sending:hover {
@@ -441,9 +446,11 @@ input[type="submit"].sending:hover {
 	display: none;
 }
 
-.errorMessage {
+.error {
 	padding-top: 5px;
 	color: #de3329;
+	font-size: 1em;
+	font-weight: normal;
 }
 
 .ajax-progress {

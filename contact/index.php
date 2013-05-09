@@ -1,23 +1,8 @@
 <!DOCTYPE html>
 
 <head>
-	
-	<!-- JS files -->
-	<script src="/js/jquery-1.9.1.min.js"></script>
-	<!--[if lt IE 9]>
-	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-	
-	<!-- CSS files -->
-	<link rel="stylesheet" href="/css/styles.css" />
-
-	<link rel="shortcut icon" href="/favicon.ico?v=2">
-	
+	<?php include('../includes/head.php'); ?>
 	<title>Contact | bxCreative</title>
-	<meta content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
-	<meta content="D0Stfu8UQWQXnoeOaIWukQrcWO_QXbrfg4SXB6FmzRQ" name="google-site-verification">
-	<meta content="web design, chicago web development, chicago il web developer" name="keywords">
-	<meta content="Chicago Web Development and Design" name="description">
 </head>
 
 <body class="contact">
@@ -34,23 +19,29 @@
 		<form method="post" action="/contact" id="contact-form">
 			<div class="row">
 				<label for="ContactForm_name">Name</label>
-				<input type="text" id="ContactForm_name" name="ContactForm[name]">
+				<input type="text" id="name" name="name" class="required">
 			</div>
 
 			<div class="row">
 				<label for="ContactForm_email">Email</label>
-				<input type="text" id="ContactForm_email" name="ContactForm[email]">
+				<input type="text" id="email" name="email" class="required">
 			</div>
 
 			<div class="row">
 				<label for="ContactForm_message">Message</label>
-				<textarea id="ContactForm_message" name="ContactForm[message]" cols="50" rows="6"></textarea>
+				<textarea id="message" name="message" class="required" cols="50" rows="6"></textarea>
 			</div>
 
 			<div class="row buttons">
-				<input type="submit" value="Send">
+				<input type="submit" value="Send" class="submit">
 			</div>
 		</form>
+
+		<div class="contact-success" style="display:none;">
+			<h2>Thank you!</h2>
+			<p>We will be in touch :)</p>
+		</div>
+
 		</div>
 
 	</div></section><!-- end #main -->
