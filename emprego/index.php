@@ -6,11 +6,11 @@
 </head>
 
 <body class="project">
-	
+
 	<?php include('../includes/header.php'); ?>
 
 	<section id="main"><div class="inner clearfix">
-		
+
 		<div class="work-back"><a href="/">&larr; Back home</a></div>
 
 		<h1><a target="_blank" href="http://empregoligado.com.br">empregoligado.com.br</a></h1>
@@ -18,7 +18,7 @@
 		<div class="projects">
 			<div class="project-item clearfix">
 				<div class="left">
-					<div class="project-image"><img src="/images/project_images/pic_emprego1.jpg"></div>
+					<div class="project-image"><img src="/images/projects/pic_emprego1.jpg"></div>
 				</div>
 				<div class="right">
 					<h2 class="title">SMS based job marketplace</h2>
@@ -27,7 +27,7 @@
 			</div>
 			<div class="project-item clearfix">
 				<div class="left">
-					<div class="project-image"><img src="/images/project_images/pic_emprego2.jpg"></div>
+					<div class="project-image"><img src="/images/projects/pic_emprego2.jpg"></div>
 				</div>
 				<div class="right">
 					<h2 class="title">Portuguese public interface, English admin interface</h2>
@@ -39,7 +39,7 @@
 	</div></section><!-- end #main -->
 
 	<?php include('../includes/footer.php'); ?>
-	
+
 </body>
 
 </html>

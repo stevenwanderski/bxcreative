@@ -42,7 +42,7 @@
 	<div class="work"><div class="inner clearfix">
 		<section id="content">
 			<div class="project-wrap">
-				<a href="lightswitch">
+				<a href="smas">
 					<div class="project-image">
 						<img src="/images/projects/logos/smas.jpg">
 					</div>
