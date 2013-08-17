@@ -409,12 +409,12 @@ footer .community h4 {
 
 .project-item .left {
 	float: left;
-	width: 57%;
+	width: 59.5%;
 }
 
 .project-item .right {
 	float: right;
-	width: 37%;
+	width: 35%;
 }
 
 .project-image {
@@ -422,8 +422,12 @@ footer .community h4 {
 	border: solid 2px #eee;
 }
 
+.project-image.no-border {
+	border: 0;
+}
+
 .project-item img {
-	width: 100%;
+	max-width: 100%;
 	height: auto;
 }
 

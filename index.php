@@ -51,7 +51,7 @@
 				</a>
 			</div>
 			<div class="project-wrap middle">
-				<a href="cappellos">
+				<a href="thrifted">
 					<div class="project-image">
 						<img src="/images/projects/logos/thrifted.png">
 					</div>

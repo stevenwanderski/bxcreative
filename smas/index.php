@@ -2,7 +2,7 @@
 
 <head>
   <?php include('../includes/head.php'); ?>
-  <title>Emprego Ligado | bxCreative</title>
+  <title>Sing Me a Story | bxCreative</title>
 </head>
 
 <body class="project">
@@ -21,17 +21,30 @@
           <div class="project-image"><img src="/images/projects/smas/smas1.png"></div>
         </div>
         <div class="right">
-          <h2 class="title">SMS based job marketplace</h2>
-          <p class="description">Emprego Ligado connects job seekers with job providers through the use of SMS text messaging. Notification of new jobs, as well as the registration process can all be done through SMS messaging. Job providers can also find prospective employees, setup interviews, and provide extra information all through SMS messaging.</p>
+          <h2 class="title">Writing songs for needy children</h2>
+          <p class="description">
+            The Sing Me a Story Foundation matches songwriters with needy children. The children draw stories and songwriters all over the world write songs to accompany the story. Songwriters can then raise money for the organization-sponsored stories.
+          </p>
         </div>
       </div>
       <div class="project-item clearfix">
         <div class="left">
-          <div class="project-image"><img src="/images/projects/smas/smas2.png"></div>
+          <div class="project-image no-border"><img src="/images/projects/smas/smas2.jpg"></div>
         </div>
         <div class="right">
-          <h2 class="title">Portuguese public interface, English admin interface</h2>
-          <p class="description">The public interface is provided to users in Portuguese, while the administration area remains in English. A robust translation interface was implemented making the switch from English to Portuguese easy and efficient.</p>
+          <h2 class="title">Completely responsive, mobile friendly design</h2>
+          <p class="description">
+            Page layouts adapt to the device the user is using. Therefore, the user experience is always top-notch no matter if the site is being viewed on mobile, tablet, or desktop computer.
+          </p>
+        </div>
+      </div>
+      <div class="project-item clearfix">
+        <div class="left">
+          <div class="project-image"><img src="/images/projects/smas/smas3.png"></div>
+        </div>
+        <div class="right">
+          <h2 class="title">Songwriters create music to accompany children-written stories</h2>
+          <p class="description">The site allows songwriters to upload songs to individual stories. Users can then listen, share, and comment on the songs.</p>
         </div>
       </div>
     </div>
