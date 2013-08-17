@@ -22,7 +22,7 @@
 			</div>
 
 			<p class="body">
-				We are a four-man team based in Chicago that love building for the web.<br>
+				We are a four-man team web based in Chicago.<br>
 				Since we are small, we like working with small teams. Let's chat if you are:
 			</p>
 
