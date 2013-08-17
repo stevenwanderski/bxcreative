@@ -21,9 +21,9 @@
           <div class="project-image"><img src="/images/projects/smas/smas1.png"></div>
         </div>
         <div class="right">
-          <h2 class="title">Writing songs for needy children</h2>
+          <h2 class="title">Nonprofit community to help underprivilaged children</h2>
           <p class="description">
-            The Sing Me a Story Foundation matches songwriters with needy children. The children draw stories and songwriters all over the world write songs to accompany the story. Songwriters can then raise money for the organization-sponsored stories.
+            The Sing Me a Story Foundation helps musicians write songs for children. The children draw stories and songwriters all over the world write songs to accompany the stories. Songwriters can then raise money for the organization-sponsored stories. This all happens within the web interface.
           </p>
         </div>
       </div>
@@ -34,7 +34,7 @@
         <div class="right">
           <h2 class="title">Completely responsive, mobile friendly design</h2>
           <p class="description">
-            Page layouts adapt to the device the user is using. Therefore, the user experience is always top-notch no matter if the site is being viewed on mobile, tablet, or desktop computer.
+            Page layouts adapt to the device the user is using. Therefore, the user experience is always top-notch regardless whether the site is being viewed on mobile, tablet, or desktop computer.
           </p>
         </div>
       </div>
