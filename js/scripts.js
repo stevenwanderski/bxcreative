@@ -1,10 +1,10 @@
 $(function(){
-		
+
 	// validate the contact form
 	$('form').validate({
 		submitHandler: contactSubmit
 	});
-	
+
 	function contactSubmit(form){
 		var $form = $(form);
 		// change the submit button value and disable it to prevent multiple submissions
@@ -21,6 +21,7 @@ $(function(){
 			if(response == 'success'){
 				$('form').fadeOut(300, function(){
 					$('.contact-success').fadeIn(300);
+					$('html, body').animate({ scrollTop: 0 }, 200);
 				});
 			// if an error occurred, display the error message
 			}else{
@@ -30,5 +31,5 @@ $(function(){
 		});
 		return false;
 	}
-	
+
 });

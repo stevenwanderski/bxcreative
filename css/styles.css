@@ -61,8 +61,6 @@ h1 {
 	font-size: 56px;
 	line-height: 68px;
 	margin-bottom: 10px;
-	-moz-transition: all 0.15s ease-in-out 0s;
-	-webkit-transition: all 0.15s ease-in-out 0s;
 }
 
 h1 a {
@@ -93,26 +91,6 @@ em {
 	color: #f7f4f0;
 }
 
-.btn {
-	color: #fff;
-	background: #de3329;
-	padding: 10px 70px;
-	font-size: 30px;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	border-radius: 30px;
-	display: inline-block;
-	text-transform: uppercase;
-	font-weight: bold;
-/*	-moz-box-shadow: 0 10px 0 #8f211a;
-	-webkit-box-shadow: 0 10px 0 #8f211a;
-	box-shadow: 0 10px 0 #8f211a;
-*/	position: relative;
-}
-
-.btn:hover {
-	background: #e8352b;
-}
 
 /** STRUCTURE
 ================================================= **/
@@ -291,7 +269,6 @@ footer .company p {
 	height: 170px;
 	line-height: 170px;
 	background: #fff;
-	/*display: inline-block;*/
 	max-width: 100%;
 }
 
@@ -409,7 +386,6 @@ footer .company p {
 
 .work-back a {
 	color: #de3329;
-/*	font-weight: bold;*/
 	font-size: 16px;
 }
 
@@ -446,12 +422,14 @@ textarea {
 }
 
 input[type="text"] {
-	width: 400px;
+	width: 95%;
+	max-width: 600px;
 	font-size: 14px;
 }
 
 textarea {
-	width: 600px;
+	width: 95%;
+	max-width: 600px;
 	font-family: inherit;
 	font-size: 16px;
 }
@@ -491,10 +469,6 @@ input[disabled]:hover {
 
 input[type="submit"].sending:hover {
 	text-decoration: none;
-}
-
-#webform-client-form-3 .messages {
-	display: none;
 }
 
 .error {
@@ -549,7 +523,9 @@ input[type="submit"].sending:hover {
 	footer .community a { display: block; }
 
 	.inner { max-width: 420px; }
+	#main { padding-top: 25px; }
 	h1, .front h1 { font-size: 32px; text-align: center; }
+	h2 { text-align: center; }
 
 	.team .member {
 		width: 35%;
@@ -584,4 +560,5 @@ input[type="submit"].sending:hover {
 	.project-item .left { margin-bottom: 20px; }
 	.project-item .right { text-align: center; }
 
+	.contact-success p { text-align: center; }
 }

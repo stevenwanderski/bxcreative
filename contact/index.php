@@ -6,13 +6,12 @@
 </head>
 
 <body class="contact">
-	
+
 	<?php include('../includes/header.php'); ?>
 
 	<section id="main"><div class="inner clearfix">
-		
-		<h1>Drop us a note.</h1>
-		<p class="body">Got a new great project? Looking for something to do in Chicago? Don't be shy!</p>
+
+		<h1>Contact us</h1>
 
 		<div class="form">
 
@@ -47,7 +46,7 @@
 	</div></section><!-- end #main -->
 
 	<?php include('../includes/footer.php'); ?>
-	
+
 </body>
 
 </html>
