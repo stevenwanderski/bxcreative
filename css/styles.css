@@ -1,4 +1,4 @@
-/* @override 
+/* @override
 	http://new.bxcreative.com/sites/all/themes/bxcreative/css/bxcreative.css?lvhvgr
 */
 
@@ -75,14 +75,6 @@ h1 a:hover {
 	color: #de3329;
 }
 
-.front h1 {
-	text-align: center;
-}
-
-.front .body {
-	text-align: center;
-}
-
 a {
 	text-decoration: none;
 }
@@ -104,28 +96,31 @@ em {
 .btn {
 	color: #fff;
 	background: #de3329;
-	padding: 10px 30px;
-	font-size: 24px;
+	padding: 10px 70px;
+	font-size: 30px;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
-	border-radius: 10px;
+	border-radius: 30px;
 	display: inline-block;
-	-moz-box-shadow: 0 10px 0 #8f211a;
+	text-transform: uppercase;
+	font-weight: bold;
+/*	-moz-box-shadow: 0 10px 0 #8f211a;
 	-webkit-box-shadow: 0 10px 0 #8f211a;
 	box-shadow: 0 10px 0 #8f211a;
-	position: relative;
+*/	position: relative;
 }
 
 .btn:hover {
 	background: #e8352b;
 }
 
-/** STRUCTURE 
+/** STRUCTURE
 ================================================= **/
 
 body {
 	font-family: KievitWeb;
-	background: url(../images/bg_texture_black.jpg);
+	background: #f9f9f9;
+	/*background: url(../images/bg_texture_black.jpg);*/
 }
 
 header, footer, section {
@@ -133,32 +128,38 @@ header, footer, section {
 }
 
 #main {
-	background: url(../images/bg_texture_tan.jpg);
+	/*background: url(../images/bg_texture_tan.jpg);*/
 	padding-top: 55px;
+	background: #fff
 }
 
 #main .inner {
 	max-width: 960px;
 	margin: 0 auto;
-	padding-bottom: 60px;
+	padding-bottom: 20px;
 	position: relative;
 	width: 90%;
 }
 
 #main .body {
 	font-size: 20px;
-	color: #707070;
-	margin-bottom: 20px;
+	color: #999;
+	margin-bottom: 30px;
 	-moz-transition: all 0.15s ease-in-out 0s;
 	-webkit-transition: all 0.15s ease-in-out 0s;
 }
 
 p.cta {
-	padding: 20px 0 50px;
+	padding: 20px 0;
 }
 
-/** HEADER 
+/** HEADER
 ================================================= **/
+
+header {
+	background: #f9f9f9;
+	border-bottom: solid #ddd 3px;
+}
 
 header .inner {
 	max-width: 960px;
@@ -168,13 +169,13 @@ header .inner {
 }
 
 header a {
-	color: #f7f4f0;;
+	color: #454545;;
 }
 
 header .logo {
-	font-size: 42px;
-	letter-spacing: 1px;
-	background: url(../images/icon_star1.png) no-repeat 0 5px;
+	font-size: 32px;
+	/*letter-spacing: 1px;*/
+	background: url(../images/icon_star1.png) no-repeat 0 -1px;
 	padding-left: 50px;
 	margin-top: 20px;
 	margin-left: -53px;
@@ -195,7 +196,7 @@ header nav li {
 
 header nav li a {
 	display: block;
-	padding: 38px 15px 0;
+	padding: 30px 0 0;
 	font-size: 18px;
 	font-weight: bold;
 	background-position: -999999px -999999px;
@@ -224,16 +225,57 @@ header li.contact a:hover {
 	text-decoration: underline;
 }
 
-/** HOMEPAGE 
+/** FOOTER
 ================================================= **/
 
-.front h2 {
-	text-align: center;
-	background: url(../images/icon_star2.png) no-repeat 50% 16px;
-	font-size: 42px;
-	margin-bottom: 25px;
-	display: none;
+footer {
+	border-top: solid #ddd 3px;
 }
+
+footer .inner {
+	max-width: 960px;
+	margin: 0 auto;
+	color: #454545;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	width: 90%;
+}
+
+footer a {
+	color: #454545;
+}
+
+footer a:hover {
+	border-bottom: solid 1px #f7f4f0;
+}
+
+footer h4 {
+	color: #454545;
+}
+
+/*footer logo*/
+footer .company {
+	float: left;
+	margin-right: 60px;
+}
+
+footer .company h4 {
+	background: url(../images/icon_star3.png) no-repeat 0 3px;
+	font-size: 22px;
+	letter-spacing: 1px;
+	padding-left: 28px;
+	margin-left: -28px;
+}
+
+/*bxcommunity*/
+footer .community h4 {
+	font-size: 22px;
+	letter-spacing: 1px;
+}
+
+
+/** HOMEPAGE
+================================================= **/
 
 .project-wrap {
  	float: left;
@@ -247,7 +289,6 @@ header li.contact a:hover {
 
 .project-wrap a {
 	display: block;
-	padding-bottom: 45px;
 }
 
 .project-wrap a:hover .project-title {
@@ -268,14 +309,96 @@ header li.contact a:hover {
 }
 
 .project-wrap img {
-	max-width: 100%;
-	height: auto;
-	box-shadow: 0 0 7px #bbb;
-	-moz-box-shadow: 0 0 7px #bbb;
-	-webkit-box-shadow: 0 0 7px #bbb;
+	vertical-align: middle;
 }
 
-/** WORK 
+.project-wrap .project-image {
+	border: solid #eee 1px;
+	height: 170px;
+	line-height: 170px;
+	background: #fff;
+	display: inline-block;
+	width: 100%;
+}
+
+.front .content {
+	/*float: left;*/
+}
+
+.team {
+	/*float: right;*/
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.team .member {
+	/*margin-bottom: 10px;*/
+	display: inline;
+	margin: 0 20px;
+}
+
+.team img {
+	/*width: 80%;*/
+}
+
+.front ul {
+	font-size: 24px;
+	color: #707070;
+	/*float: left;*/
+	display: inline-block;
+	list-style-position: inside;
+	/*margin-left: 215px;*/
+}
+
+.front li {
+	margin-bottom: 15px;
+	text-align: left;
+}
+
+.front h1 {
+	text-align: center;
+	font-size: 80px;
+	margin-bottom: 40px;
+}
+
+.front #main .body {
+	text-align: center;
+	font-size: 24px;
+}
+
+.cta a {
+	color: #de3329;
+	font-size: 40px;
+	text-decoration: underline;
+}
+
+.cta a:hover {
+	text-decoration: none;
+}
+
+.list-wrap {
+	text-align: center;
+}
+
+.front h2 {
+	/*background: url(../images/icon_star2.png) no-repeat 50% 16px;*/
+	font-size: 42px;
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+.work {
+	background: #fcfcfc;
+	border-top: solid #eee 1px;
+}
+
+.work .inner {
+	margin: 0 auto;
+	max-width: 960px;
+	padding: 60px 0;
+}
+
+/** WORK
 ================================================= **/
 
 .projects {
@@ -301,7 +424,7 @@ header li.contact a:hover {
 	height: auto;
 	box-shadow: 0 0 7px #bbb;
 	-moz-box-shadow: 0 0 7px #bbb;
-	-webkit-box-shadow: 0 0 7px #bbb;	
+	-webkit-box-shadow: 0 0 7px #bbb;
 }
 
 .project-item h2 {
@@ -335,7 +458,7 @@ header li.contact a:hover {
 	padding-top: 85px;
 }
 
-/** PHILOSOPHY 
+/** PHILOSOPHY
 ================================================= **/
 
 .philosophy-items {
@@ -368,7 +491,7 @@ header li.contact a:hover {
 	width: 85%;
 }
 
-/** CONTACT 
+/** CONTACT
 ================================================= **/
 
 label {
@@ -470,50 +593,6 @@ input[type="submit"].sending:hover {
 	font-size: 18px;
 }
 
-/** FOOTER 
-================================================= **/
-
-footer .inner {
-	max-width: 960px;
-	margin: 0 auto;
-	color: #f7f4f0;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	width: 90%;
-}
-
-footer a {
-	color: #f7f4f0;
-}
-
-footer a:hover {
-	border-bottom: solid 1px #f7f4f0;
-}
-
-footer h4 {
-	color: #f7f4f0;
-}
-
-/*footer logo*/
-footer .company {
-	float: left;
-	margin-right: 60px;
-}
-
-footer .company h4 {
-	background: url(../images/icon_star3.png) no-repeat 0 3px;
-	font-size: 22px;
-	letter-spacing: 1px;
-	padding-left: 28px;
-	margin-left: -28px;
-}
-
-/*bxcommunity*/
-footer .community h4 {
-	font-size: 22px;
-	letter-spacing: 1px;
-}
-
 
 /** RESPONSIVE LAYOUTS
 =======================================**/
@@ -556,61 +635,61 @@ footer .community h4 {
 		font-size: 42px;
 		line-height: 42px;
 	}
-	
+
 	.front h1 {
 		text-align: center;
 	}
-	
+
 	.front #main .body {
 		text-align: center;
 	}
-	
+
 	header .logo {
 		margin: 19px auto 0;
 		width: 260px;
 		float: none;
 	}
-	
+
 	header nav {
 		float: none;
 		padding-bottom: 10px;
 		margin-left: 0;
 	}
-	
+
 	header nav ul {
 		text-align: center;
 		margin: 0;
 		padding: 0;
 	}
-	
+
 	header nav li {
 		float: none;
 		display: inline;
 	}
-	
+
 	header nav li a {
 		padding-top: 0;
 		background: none!important;
 		display: inline;
 	}
-	
+
 	header nav li a.active {
 		text-decoration: underline;
 	}
-	
+
 	footer .community {
 		width: 185px;
 		float: left;
 	}
-	
+
 	.project-wrap a .project-title {
 		font-size: 18px;
 	}
-	
+
 	.project-wrap a .project-tagline {
 		font-size: 15px;
 	}
-	
+
 	/*philosophy*/
 	.page-node-2 h1,
 	.page-node-2 #main-content .body {
@@ -622,15 +701,15 @@ footer .community h4 {
 		font-size: 36px;
 		text-align: left;
 	}
-	
+
 	.project #main {
 		padding-top: 50px;
 	}
-	
+
 	.work-back {
 	top: -35px;
 }
-	
+
 	.project-item h2 {
 		font-size: 22px;
 		line-height: 26px;
@@ -640,15 +719,15 @@ footer .community h4 {
 
 /** iPhone landscape **/
 @media only screen and (max-width: 480px) {
-	
+
 	h1 {
 		line-height: 48px;
 	}
-	
+
 	.front h1 {
 		text-align: center;
 	}
-	
+
 	#main {
 		padding-top: 20px;
 	}
@@ -656,16 +735,16 @@ footer .community h4 {
 	#main .body {
 		font-size: 16px;
 	}
-	
+
 	.front #main .body {
 		text-align: center;
 	}
-		
+
 	header nav li a {
 		padding-top: 0;
 		background: none!important;
 	}
-	
+
 	header nav li a.active {
 		text-decoration: underline;
 	}
@@ -673,7 +752,7 @@ footer .community h4 {
 	footer .community {
 		display: none;
 	}
-	
+
 	.project-wrap {
 		float: none;
 		width: 100%;
@@ -682,32 +761,32 @@ footer .community h4 {
 	.project-wrap.middle {
 		padding: 0;
 	}
-	
+
 	.project-wrap.odd a,
 	.project-wrap.even a {
 		padding: 0 0 20px 0;
 	}
-	
+
 /*	.project-wrap .project-title,
 	.project-wrap .project-tagline {display: none;}
-*/	
+*/
 	/*works*/
 	.project-item h2 {
 		font-size: 18px;
 		line-height: 20px;
 	}
-	
+
 	.project-item .left {
 		float: none;
 		width: 100%;
 		margin-bottom: 10px;
 	}
-	
+
 	.project-item .right {
 		float: none;
 		width: 100%;
 	}
-	
+
 	/*philosophy*/
 	.view-philosophy .field-name-field-image {width: 20%;}
 	.view-philosophy .field-name-field-image img {
@@ -716,7 +795,7 @@ footer .community h4 {
 	}
 	.view-philosophy .field-name-field-work-item-title {
 		width: 80%;
-		font-size: 20px;	
+		font-size: 20px;
 	}
 	.view-philosophy .field-name-field-work-item-desc {
 		width: 80%;
@@ -727,7 +806,7 @@ footer .community h4 {
 	.node-type-webform h1 {
 		font-size: 38px;
 	}
-	
+
 	.form-text {
 		width: 90%;
 	}
@@ -736,12 +815,12 @@ footer .community h4 {
 		width: 90%;
 	}
 
-	
+
 }
 
 /** iPhone portrait **/
 @media only screen and (max-width: 320px) {
-	
+
 	header nav li a {
 		font-size: 14px;
 	}
@@ -750,11 +829,11 @@ footer .community h4 {
 		font-size: 32px;
 		background-position: 50% 10px;
 	}
-	
+
 	.view-philosophy .field-name-field-work-item-title {
-		font-size: 18px;	
+		font-size: 18px;
 	}
-	
+
 	/*works*/
 	.project h1 {
 		font-size: 22px;
@@ -763,7 +842,7 @@ footer .community h4 {
 	.btn {
 		font-size: 20px;
 	}
-	
+
 }
 
 
