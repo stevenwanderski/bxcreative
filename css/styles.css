@@ -120,33 +120,26 @@ em {
 body {
 	font-family: KievitWeb;
 	background: #f9f9f9;
-	/*background: url(../images/bg_texture_black.jpg);*/
 }
 
 header, footer, section {
 	display: block;
 }
 
+.inner {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 20px;
+	position: relative;
+}
+
 #main {
-	/*background: url(../images/bg_texture_tan.jpg);*/
 	padding-top: 55px;
 	background: #fff
 }
 
 #main .inner {
-	max-width: 960px;
-	margin: 0 auto;
 	padding-bottom: 20px;
-	position: relative;
-	width: 90%;
-}
-
-#main .body {
-	font-size: 20px;
-	color: #999;
-	margin-bottom: 30px;
-	-moz-transition: all 0.15s ease-in-out 0s;
-	-webkit-transition: all 0.15s ease-in-out 0s;
 }
 
 p.cta {
@@ -162,20 +155,23 @@ header {
 }
 
 header .inner {
-	max-width: 960px;
-	margin: 0 auto;
 	font-weight: bold;
-	width: 90%;
+	padding: 0 20px;
 }
 
 header a {
-	color: #454545;;
+	color: #454545;
+	-moz-transition: color 0.15s ease-in-out 0s;
+	-webkit-transition: color 0.15s ease-in-out 0s;
+}
+
+header a:hover {
+	color: #de3329;
+	text-decoration: none;
 }
 
 header .logo {
 	font-size: 32px;
-	background: url(../images/icon_star1.png) no-repeat 0 -1px;
-	padding-left: 50px;
 	margin-top: 20px;
 	float: left;
 	margin-bottom: 15px;
@@ -183,8 +179,14 @@ header .logo {
 	-webkit-transition: all 0.15s ease-in-out 0s;
 }
 
+header .logo img {
+	vertical-align: top;
+	margin-right: 8px;
+}
+
 header nav {
 	float: right;
+	display: inline-block;
 }
 
 header nav li {
@@ -197,30 +199,6 @@ header nav li a {
 	padding: 30px 0 0;
 	font-size: 18px;
 	font-weight: bold;
-	background-position: -999999px -999999px;
-}
-
-/*works*/
-header li.home.active a,
-header li.home a:hover {
-	background: url(../images/icon_home.png) no-repeat 58px 19px;
-}
-
-/*philosophy*/
-header li.philosophy.active a,
-header li.philosophy a:hover {
-	background: url(../images/icon_book.png) no-repeat 48px 20px;
-}
-
-/*contact*/
-header li.contact a {
-	/*padding-right: 0;*/
-}
-
-header li.contact.active a,
-header li.contact a:hover {
-	/*background: url(../images/icon_mail.png) no-repeat 38px 22px;*/
-	text-decoration: underline;
 }
 
 /** FOOTER
@@ -231,12 +209,8 @@ footer {
 }
 
 footer .inner {
-	max-width: 960px;
-	margin: 0 auto;
-	color: #454545;
 	padding-top: 30px;
 	padding-bottom: 30px;
-	width: 90%;
 }
 
 footer a {
@@ -244,7 +218,7 @@ footer a {
 }
 
 footer a:hover {
-	border-bottom: solid 1px #f7f4f0;
+	color: #de3329;
 }
 
 footer h4 {
@@ -257,18 +231,19 @@ footer .company {
 	margin-right: 60px;
 }
 
-footer .company h4 {
-	background: url(../images/icon_star3.png) no-repeat 0 3px;
+footer h4 {
 	font-size: 22px;
-	letter-spacing: 1px;
-	padding-left: 28px;
-	margin-left: -28px;
 }
 
-/*bxcommunity*/
-footer .community h4 {
-	font-size: 22px;
-	letter-spacing: 1px;
+footer h4 img {
+	vertical-align: top;
+	position: relative;
+	top: 3px;
+	margin-right: 4px;
+}
+
+footer .company p {
+	margin-left: 28px;
 }
 
 
@@ -308,6 +283,7 @@ footer .community h4 {
 
 .project-wrap img {
 	vertical-align: middle;
+	max-width: 90%;
 }
 
 .project-wrap .project-image {
@@ -315,40 +291,30 @@ footer .community h4 {
 	height: 170px;
 	line-height: 170px;
 	background: #fff;
-	display: inline-block;
-	width: 100%;
-}
-
-.front .content {
-	/*float: left;*/
+	/*display: inline-block;*/
+	max-width: 100%;
 }
 
 .team {
-	/*float: right;*/
 	text-align: center;
 	margin-bottom: 30px;
 }
 
 .team .member {
-	/*margin-bottom: 10px;*/
-	display: inline;
+	display: inline-block;
 	margin: 0 20px;
 }
 
-.team img {
-	/*width: 80%;*/
-}
+.team .member img { max-width: 100%; }
 
 .front ul {
 	font-size: 24px;
 	color: #707070;
-	/*float: left;*/
 	display: inline-block;
 	list-style-position: inside;
-	/*margin-left: 215px;*/
 }
 
-.front li {
+.front #main li {
 	margin-bottom: 15px;
 	text-align: left;
 }
@@ -359,9 +325,11 @@ footer .community h4 {
 	margin-bottom: 40px;
 }
 
-.front #main .body {
+.front #main p {
 	text-align: center;
-	font-size: 24px;
+	font-size: 20px;
+	color: #999;
+	margin-bottom: 30px;
 }
 
 .cta a {
@@ -378,22 +346,14 @@ footer .community h4 {
 	text-align: center;
 }
 
-.front h2 {
-	/*background: url(../images/icon_star2.png) no-repeat 50% 16px;*/
-	font-size: 42px;
-	margin-bottom: 25px;
-	text-align: center;
-}
-
 .work {
 	background: #fcfcfc;
 	border-top: solid #eee 1px;
 }
 
 .work .inner {
-	margin: 0 auto;
-	max-width: 960px;
-	padding: 60px 0;
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
 
 /** WORK
@@ -440,12 +400,11 @@ footer .community h4 {
 .project-item .description {
 	color: #838383;
 	font-size: 16px;
+	margin-bottom: 50px;
 }
 
 .work-back {
-	position: absolute;
-	top: -60px;
-	left: 0;
+	margin-bottom: 30px;
 }
 
 .work-back a {
@@ -459,40 +418,7 @@ footer .community h4 {
 }
 
 .project #main {
-	padding-top: 85px;
-}
-
-/** PHILOSOPHY
-================================================= **/
-
-.philosophy-items {
-	margin-top: 55px;
-}
-
-.philosophy-item {
-	margin-bottom: 50px;
-}
-
-.philosophy-item .image {
-	float: left;
-	width: 15%;
-}
-
-.philosophy-item .title {
-	font-size: 28px;
-	line-height: 34px;
-	margin-bottom: 5px;
-	font-weight: bold;
-	color: #302f2e;
-	float: left;
-	width: 85%;
-}
-
-.philosophy-item p {
-	color: #838383;
-	font-size: 16px;
-	float: left;
-	width: 85%;
+	padding-top: 30px;
 }
 
 /** CONTACT
@@ -601,258 +527,61 @@ input[type="submit"].sending:hover {
 /** RESPONSIVE LAYOUTS
 =======================================**/
 
-@media only screen and (max-width: 1100px) {
-	header .logo {margin-left: 0;}
+@media only screen and (max-width: 910px) {
+
+	.project-wrap .project-title {
+		font-size: 18px;
+	}
+
 }
 
-/** iPad landscape **/
-@media only screen and (max-width: 1024px) {
-	#main .body {font-size: 19px;}
-	/*footer*/
-	footer .company h4 {margin-left: 0;}
-	footer .company p {margin-left: 28px;}
-}
+@media only screen and (max-width: 766px) {
 
-/** iPad portrait **/
-@media only screen and (max-width: 768px) {
-	h1 {font-size: 48px;}
-	#main .body {font-size: 18px;}
-	/*philosophy*/
-	.view-philosophy .field-name-field-image {width: 20%;}
-	.view-philosophy .field-name-field-work-item-title {width: 80%;}
-	.view-philosophy .field-name-field-work-item-desc {width: 80%;}
+	header { text-align: center; }
+	header .logo { float: none; }
+	header nav { float: none; }
+	header nav li a { padding-top: 0; }
+
+	footer { text-align: center; }
+	footer .bullet { display: none; }
+	footer .company { float: none; margin: 0 0 30px; }
+	footer .company p { margin-left: 0; }
+	footer .community a { display: block; }
+
+	.inner { max-width: 420px; }
+	h1, .front h1 { font-size: 32px; text-align: center; }
+
+	.team .member {
+		width: 35%;
+		margin: 0 10px 12px 10px;
+	}
+
+	.front #main ul {
+		font-size: 20px;
+		list-style: outside;
+		margin-left: 20px;
+	}
 
 	.project-wrap {
 		float: none;
 		width: 100%;
+		margin-bottom: 55px;
 	}
 
 	.project-wrap.middle {
 		padding: 0;
 	}
 
-}
+	.work-back { display: none; }
 
+	.project h1 { font-size: 26px; }
 
-@media only screen and (max-width: 610px) {
-	h1 {
-		font-size: 42px;
-		line-height: 42px;
-	}
+	.project-item { margin-bottom: 10px; }
+	.project-item h2 { font-size: 20px; line-height: 26px; }
+	.project-item .left,
+	.project-item .right { float: none; width: 100%; }
 
-	.front h1 {
-		text-align: center;
-	}
-
-	.front #main .body {
-		text-align: center;
-	}
-
-	header .logo {
-		margin: 19px auto 0;
-		width: 260px;
-		float: none;
-	}
-
-	header nav {
-		float: none;
-		padding-bottom: 10px;
-		margin-left: 0;
-	}
-
-	header nav ul {
-		text-align: center;
-		margin: 0;
-		padding: 0;
-	}
-
-	header nav li {
-		float: none;
-		display: inline;
-	}
-
-	header nav li a {
-		padding-top: 0;
-		background: none!important;
-		display: inline;
-	}
-
-	header nav li a.active {
-		text-decoration: underline;
-	}
-
-	footer .community {
-		width: 185px;
-		float: left;
-	}
-
-	.project-wrap a .project-title {
-		font-size: 18px;
-	}
-
-	.project-wrap a .project-tagline {
-		font-size: 15px;
-	}
-
-	/*philosophy*/
-	.page-node-2 h1,
-	.page-node-2 #main-content .body {
-		text-align: left;
-	}
-
-	/*works*/
-	.project h1 {
-		font-size: 36px;
-		text-align: left;
-	}
-
-	.project #main {
-		padding-top: 50px;
-	}
-
-	.work-back {
-	top: -35px;
-}
-
-	.project-item h2 {
-		font-size: 22px;
-		line-height: 26px;
-	}
+	.project-item .left { margin-bottom: 20px; }
+	.project-item .right { text-align: center; }
 
 }
-
-/** iPhone landscape **/
-@media only screen and (max-width: 480px) {
-
-	h1 {
-		line-height: 48px;
-	}
-
-	.front h1 {
-		text-align: center;
-	}
-
-	#main {
-		padding-top: 20px;
-	}
-
-	#main .body {
-		font-size: 16px;
-	}
-
-	.front #main .body {
-		text-align: center;
-	}
-
-	header nav li a {
-		padding-top: 0;
-		background: none!important;
-	}
-
-	header nav li a.active {
-		text-decoration: underline;
-	}
-
-	footer .community {
-		display: none;
-	}
-
-	.project-wrap {
-		float: none;
-		width: 100%;
-	}
-
-	.project-wrap.middle {
-		padding: 0;
-	}
-
-	.project-wrap.odd a,
-	.project-wrap.even a {
-		padding: 0 0 20px 0;
-	}
-
-/*	.project-wrap .project-title,
-	.project-wrap .project-tagline {display: none;}
-*/
-	/*works*/
-	.project-item h2 {
-		font-size: 18px;
-		line-height: 20px;
-	}
-
-	.project-item .left {
-		float: none;
-		width: 100%;
-		margin-bottom: 10px;
-	}
-
-	.project-item .right {
-		float: none;
-		width: 100%;
-	}
-
-	/*philosophy*/
-	.view-philosophy .field-name-field-image {width: 20%;}
-	.view-philosophy .field-name-field-image img {
-		width: 80%;
-		height: auto;
-	}
-	.view-philosophy .field-name-field-work-item-title {
-		width: 80%;
-		font-size: 20px;
-	}
-	.view-philosophy .field-name-field-work-item-desc {
-		width: 80%;
-		font-size: 14px;
-	}
-
-	/*contact*/
-	.node-type-webform h1 {
-		font-size: 38px;
-	}
-
-	.form-text {
-		width: 90%;
-	}
-
-	.form-textarea {
-		width: 90%;
-	}
-
-
-}
-
-/** iPhone portrait **/
-@media only screen and (max-width: 320px) {
-
-	header nav li a {
-		font-size: 14px;
-	}
-
-	.front h2 {
-		font-size: 32px;
-		background-position: 50% 10px;
-	}
-
-	.view-philosophy .field-name-field-work-item-title {
-		font-size: 18px;
-	}
-
-	/*works*/
-	.project h1 {
-		font-size: 22px;
-	}
-
-	.btn {
-		font-size: 20px;
-	}
-
-}
-
-
-
-
-
-
-
-
