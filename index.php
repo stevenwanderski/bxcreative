@@ -34,7 +34,7 @@
 				</ul>
 			</div>
 
-			<p class="body cta"><a href="/contact">Contact Us About a Project</a></p>
+			<p class="body cta"><a href="/contact">Contact Us</a></p>
 		</div>
 
 	</div></section><!-- end #main -->

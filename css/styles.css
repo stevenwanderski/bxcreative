@@ -310,13 +310,19 @@ footer .company p {
 }
 
 .cta a {
-	color: #de3329;
-	font-size: 40px;
-	text-decoration: underline;
+	color: #fff;
+	font-size: 26px;
+	font-weight: bold;
+	border: solid #eee 10px;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#de3329), to(#c22b23));
+  background: -moz-linear-gradient(top, #de3329, #c22b23);
+  padding: 10px 50px;
+  border-radius: 50px;
+  display: inline-block;
 }
 
 .cta a:hover {
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 .list-wrap {
