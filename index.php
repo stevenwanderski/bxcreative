@@ -15,10 +15,10 @@
 			<h1>We make websites.</h1>
 
 			<div class="team">
-				<div class="member"><img src="/images/team/steven.png" alt="Steven Wanderski - Lead Programmer" /></div>
-				<div class="member"><img src="/images/team/brad.png" alt="Brad Sawicki - Front End Developer" /></div>
-				<div class="member"><img src="/images/team/phil.png" alt="Phil Weber - User Experience / Interaction Designer" /></div>
-				<div class="member"><img src="/images/team/dan.png" alt="Dan Leu - Designer" /></div>
+				<div class="member"><img src="/images/team/steven.png" title="Steven Wanderski - Lead Programmer" /></div>
+				<div class="member"><img src="/images/team/brad.png" title="Brad Sawicki - Front End Developer" /></div>
+				<div class="member"><img src="/images/team/phil.png" title="Phil Weber - User Experience / Interaction Designer" /></div>
+				<div class="member"><img src="/images/team/dan.png" title="Dan Leu - Designer" /></div>
 			</div>
 
 			<p class="body">
