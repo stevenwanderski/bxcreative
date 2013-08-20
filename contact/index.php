@@ -15,7 +15,7 @@
 
 		<div class="form">
 
-		<form method="post" action="/contact" id="contact-form">
+		<form method="post" action="/php/mail.php" id="contact-form">
 			<div class="row">
 				<label for="ContactForm_name">Name</label>
 				<input type="text" id="name" name="name" class="required">
@@ -35,11 +35,6 @@
 				<input type="submit" value="Send" class="submit">
 			</div>
 		</form>
-
-		<div class="contact-success" style="display:none;">
-			<h2>Thank you!</h2>
-			<p>We will be in touch :)</p>
-		</div>
 
 		</div>
 
