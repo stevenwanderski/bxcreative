@@ -6,7 +6,7 @@
 
 	<div class="left community">
 		<h4>bxCommunity</h4>
-		<p><a href="http://bxslider.com" target="_blank">bxslider.com</a> <span class="bullet">&bull;</span> <a href="http://bxcollective.com">bxcollective.com</a> <span class="bullet">&bull;</span> <a href="http://css3buttongenerator.com">css3buttongenerator.com</a></p>
+		<p><a href="http://bxslider.com" target="_blank">bxslider.com</a> <span class="bullet">&bull;</span> <a href="http://css3buttongenerator.com">css3buttongenerator.com</a></p>
 	</div>
 
 </div></footer>
